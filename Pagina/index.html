@@ -8,13 +8,13 @@
 		/* Estilos para la página */
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #F2F2F2;
+			background-color: #f99a9a;
 			margin: 0;
 			padding: 0;
 		}
 		
 		header {
-			background-color: #FFFFFF;
+			background-color: #ffffff;
 			padding: 10px;
 			text-align: center;
 		}
@@ -106,17 +106,34 @@
 .card a {
 	color: #FFFFFF;
 }
+.instagram-button {
+  display: flex;
+  align-items: center;
+  background-color: #833ab4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.instagram-button:hover {
+  background-color: #6f2c91;
+}
 	</style>
 </head>
 <body>
 	<header>
-		<div class="social-media">
-            <img src="img\instagram.png" alt="Descripción de la imagen">
-		  <a href="https://www.instagram.com/nombre_de_usuario/">Instagram</a>
-		</div>
-		<img src="img\logo.png" alt="Logo de la empresa" class="logo">
-		<h1>Catálogo de Mueblería</h1>
-	  </header>
+        <div class="social-media">
+          <button class="instagram-button" onclick="window.location.href='https://www.instagram.com/nombre_de_usuario/'">
+            <img src="img/instagram.png" alt="Descripción de la imagen">
+            Instagram
+          </button>
+        </div>
+        <img src="img/logo.png" alt="Logo de la empresa" class="logo">
+        <h1>Catálogo de Mueblería</h1>
+      </header>
 	<main>
         <div class="card">
             <img src="img\sofa.jpg" alt="Mueble 1">
