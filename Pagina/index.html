@@ -52,6 +52,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative; /* Para que los botones se posicionen en relación a la tarjeta */
 }
 	
 
@@ -105,15 +106,14 @@
 		}
 
 		
-		.card button {
-  background-color: #f44336;
-  color: #FFFFFF;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  font-size: 18px;
+.card button,
+.card a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80%; /* Ajustar el ancho del botón */
 }
 		
 		.card button:hover {
