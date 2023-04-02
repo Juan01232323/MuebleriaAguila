@@ -40,18 +40,8 @@
 			justify-content: center;
 		}
 		
-		.card {
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+	.card {
+  position: relative; /* Para que los botones se posicionen en relación a la tarjeta */
 }
 	
 
@@ -85,10 +75,10 @@
 
    
 		.card img {
-			width: 100%;
-			height: 200px;
-			object-fit: cover;
-		}
+  width: 100%;
+  height: 60%; /* Ajustar la altura de la imagen */
+  object-fit: cover; /* Redimensionar la imagen sin perder la proporción */
+}
 		
 		.card h2 {
 			margin-top: 20px;
@@ -120,20 +110,14 @@
 			background-color: #666666;
 		}
 
-		.card button,
+.card button,
 .card a {
-	color: #FFFFFF;
-}
-.instagram-button {
-  display: flex;
-  align-items: center;
-  background-color: #833ab4;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80%; /* Ajustar el ancho del botón */
 }
 
 .instagram-button:hover {
