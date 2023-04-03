@@ -31,7 +31,7 @@
 			font-size: 36px;
 		}
 
-		 .logo {
+    .logo {
   max-width: 200px;
   margin: 10px;
   border: 5px solid #f1f1f1;
@@ -176,6 +176,14 @@
   height: 20px;
   margin-right: 5px;
 }
+.border-highlight {
+  border: 2px solid #f1c40f; /* color amarillo */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.border-highlight:hover {
+  border-color: #333333; /* color gris oscuro */
+}
 
 	</style>
 </head>
@@ -183,7 +191,7 @@
 
   <header>
     <div class="maps-media">
-      <button class="maps-button" onclick="window.location.href='https://goo.gl/maps/tZ2zHfsbDrF4SrYm7'">
+      <button class="maps-button border-highlight" onclick="window.location.href='https://goo.gl/maps/tZ2zHfsbDrF4SrYm7'">
         <img src="img/maps.png" alt="Icono de Google Maps" class="maps-icon">
         Ver ubicación en Google Maps
       </button>
@@ -193,9 +201,9 @@
     <h1>Catálogo de Mueblería</h1>
     
     <div class="social-media">
-      <button class="instagram-button" onclick="window.location.href='https://www.instagram.com/larte_home_pymes/'">
-        <img src="img/instagram.png" alt="Descripción de la imagen">
-        Instagram
+      <button class="instagram-button border-highlight">
+        <img src="img/instagram.png" alt="Icono de Instagram" class="instagram-icon">
+        Síguenos en Instagram
       </button>
     </div>
   </header>
@@ -293,5 +301,4 @@
 
       </body>
       </html>
-      
       
