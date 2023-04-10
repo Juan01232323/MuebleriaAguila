@@ -185,6 +185,57 @@
   font-size: 18px;
   cursor: pointer;
 }
+		
+		.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #36f43f;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+		
+  .whatsapp-media button {
+  margin-right: 10px; /* Agregar margen izquierdo */
+}
+
+  .whatsapp-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+  .whatsapp-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .whatsapp-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  border: 5px solid #f1f1f1;
+  transition: border-color 0.2s ease-in-out;
+}
 
 
 .maps-button:hover {
@@ -403,6 +454,13 @@
         <img src="img/maps.png" alt="Icono de Google Maps" class="maps-icon">
         Ver ubicación en Google Maps
       </button>
+			     
+			          <div class="whatsapp-media whatsapp-container">
+      <button class="whatsapp-button border-highlight" onclick="window.location.href='https://goo.gl/maps/tZ2zHfsbDrF4SrYm7'">
+      <img src="img/whatsapp.png" alt="Icono de whatsapp" class="whatsapp-icon">
+      Whatsapp
+    </button>
+					  
 
       </body>
       </html>
