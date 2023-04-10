@@ -136,6 +136,21 @@
   border-color: #333333;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+		    .map-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  border: 5px solid #f1f1f1;
+  transition: border-color 0.2s ease-in-out;
+}
 
 	.card button,
 .card a {
@@ -387,6 +402,12 @@
 
         <img src="img/animation.gif" alt="Animación">
      </div>
+		
+		     <div class="maps-media map-container">
+        <button class="maps-button border-highlight" onclick="window.location.href='https://goo.gl/maps/tZ2zHfsbDrF4SrYm7'">
+        <img src="img/maps.png" alt="Icono de Google Maps" class="maps-icon">
+        Ver ubicación en Google Maps
+      </button>
 
       </body>
       </html>
