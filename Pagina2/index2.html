@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+  </html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tienda de Muebles</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap">
+	<style>
+		/* Estilos generales */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+        body {
+		font-family: 'Montserrat', sans-serif;
+		color: #333;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+.section__item-title {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #05386B;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px #F9C74F;
+}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 1em 0;
+		font-weight: 700;
+	}
+
+	p {
+		margin: 1em 0;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1em;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	/* Header */
+	.header {
+		background-color: #F9C74F;
+		color: #ff0000;
+		padding: 2em 0;
+	}
+
+	.header__title {
+		font-size: 3em;
+		font-weight: 500;
+		text-shadow: 2px 2px #05386B;
+	}
+
+	.slogan-img {
+		margin: 2em auto;
+		padding: 1em;
+		border: 5px solid #05386B;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		max-width: 50%;
+	}
+
+	/* Navigation */
+	.header__nav {
+		margin-top: 3em;
+	}
+
+	.header__nav-list {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header__nav-item {
+		margin: 0 12em;
+	}
+
+	.header__nav-link {
+		font-size: 1.2em;
+		font-weight: 500;
+		transition: color 0.3s ease-in-out;
+	}
+
+	.header__nav-link:hover {
+		color: #fed3b7;
+	}
+
+	/* Sections */
+	.section {
+		padding: 3em 0;
+	}
+
+	.section__title {
+		font-size: 2em;
+		font-weight: 500;
+		color: #05386B;
+		margin-bottom: 1em;
+	}
+
+	.section__subtitle {
+		font-size: 1.2em;
+		font-weight: 400;
+		color: #777;
+		margin-bottom: 2em;
+	}
+
+	.section__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin: -1em;
+	}
+
+	.section__item {
+		background-color: #fff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+margin: 1em;
+flex-basis: calc(33.333% - 2em);
+padding: 1em;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+    .section__item:hover {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-5px);
+}
+
+.section__item-title {
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #05386B;
+	margin-bottom: 0.5em;
+}
+
+.section__item-description {
+	font-size: 1em;
+	color: #777;
+	margin-bottom: 1em;
+}
+
+.section__item-button {
+	background-color: #F9C74F;
+	color: #fff;
+	border: none;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: 500;
+	transition: background-color 0.3s ease-in-out;
+	align-self: flex-end;
+}
+
+.section__item-button:hover {
+	background-color: #05386B;
+	cursor: pointer;
+}
+
+/* Footer */
+.footer {
+	background-color: #05386B;
+	color: #fff;
+	padding: 3em 0;
+}
+
+.footer__logo {
+	font-size: 2em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.footer__nav {
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__nav-item {
+	margin: 0 1em;
+}
+
+.footer__nav-link {
+	font-size: 1.2em;
+	font-weight: 500;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer__nav-link:hover {
+	color: #F9C74F;
+}
+
+.footer__social {
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__social-icon {
+	font-size: 2em;
+	margin: 0 1em;
+	color: #fff;
+	transition: color 0.3s ease-in-out;
+}
+
+.footer__social-icon:hover {
+	color: #F9C74F;
+}
+
+	</style>
+
+    <body>
+        <header class="header">
+            <div class="header__container container">
+               
+                <h1 class="header__title">Bienvenidos a la Tienda de Muebles</h1>
+              
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#sofas">Sofás</a></li>
+                        <li class="header__nav-item"><a href="#sillas">Sillas</a></li>
+                        <li class="header__nav-item"><a href="#mesas">Mesas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section section--sofas" id="sofas">
+                <div class="container">
+                    <h2 class="section__title">Sofás</h2>
+                    <p class="section__subtitle">Encuentra el sofá perfecto para tu hogar.</p>
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <img src="img/tresplazas.jpg" alt="Sofá clásico">
+                            <h3 class="section__item-title">Sofá clásico</h3>
+                            <p class="section__item-price">$500</p>
+	<p></p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="item_name" value="Mueble de madera">
+        <input type="hidden" name="amount" value="100.00">
+        <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+        <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+        </form>                            
+                        </li>
+                        <li class="section__item">
+                            <img src="img/sofa_moderno.jpg" alt="Sofá moderno">
+                            <h3 class="section__item-title">Sofá moderno</h3>
+                            <p class="section__item-price">$700</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form> 
+                        </li>
+                        <li class="section__item">
+                            <img src="img/sofa_cama.jpg" alt="Sofá cama">
+                            <h3 class="section__item-title">Sofá cama</h3>
+                            <p class="section__item-price">$800</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form> 
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section section--sillas" id="sillas">
+                <div class="container">
+                    <h2 class="section__title">Sillas</h2>
+                    <p class="section__subtitle">Encuentra la silla perfecta para tu escritorio o comedor.</p>
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <img src="img/silla_clasica.jpg" alt="Silla clásica">
+                            <h3 class="section__item-title">Silla clásica</h3>
+                            <p class="section__item-price">$80</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form>                         </li>
+                        <li class="section__item">
+                            <img src="img/silla_moderna.jpg" alt="Silla moderna">
+                            <h3 class="section__item-title">Silla moderna</h3>
+                            <p class="section__item-price">$100</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form>                         </li>
+                        <li class="section__item">
+                            <img src="img/silla_oficina.jpg" alt="Silla de oficina">
+                            <h3 class="section__item-title">Silla de oficina</h3>
+                            <p class="section__item-price">$120</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form> 
+                                                    </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section section--mesas" id="mesas">
+                <div class="container">
+                    <h2 class="section__title">Mesas</h2>
+                    <p class="section__subtitle">Encuentra la mesa perfecta para tu hogar u oficina.</p>
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <img src="img/mesa_madera.jpg" alt="Mesa de madera">
+                            <h3 class="section__item-title">Mesa de madera</h3>
+                            <p class="section__item-price">$200</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form> 
+                                                    </li>
+                        <li class="section__item">
+                            <img src="img/mesa_vidrio.jpg" alt="Mesa de vidrio">
+                            <h3 class="section__item-title">Mesa de vidrio</h3>
+                            <p class="section__item-price">$250</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form> 
+                                                    </li>
+                        <li class="section__item">
+                            <img src="img/mesa_metal.jpg" alt="Mesa de metal">
+                            <h3 class="section__item-title">Mesa de metal</h3>
+                            <p class="section__item-price">$300</p>
+                            <p></p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                              <input type="hidden" name="cmd" value="_xclick">
+                              <input type="hidden" name="business" value="lartehomepymes@gmail.com">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <input type="hidden" name="item_name" value="Mueble de madera">
+                              <input type="hidden" name="amount" value="100.00">
+                              <input type="image" src="https://www.paypalobjects.com/es_ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                              <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+                              </form> 
+                                                    </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <p class="footer__copy">&copy; 2023 Tienda de Muebles</p>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#">Política de privacidad</a></li>
+                        <li class="footer__nav-item"><a href="#">Términos y condiciones</a></li>
+                        <li class="footer__nav-item"><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
