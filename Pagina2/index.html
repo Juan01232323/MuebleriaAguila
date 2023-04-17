@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=MyFont&display=swap" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 	<link rel="shortcut icon" type="image/png" href="img/logo.png">
 
 	<style>
@@ -203,6 +204,7 @@ cursor: default;
 			<input type="text" placeholder="Buscar..." id="search-input">
 			<button id="search-button">Buscar</button>
 		</div>
+			<div id="clock"></div>
 		<div class="contenedor-tabla">
 			<table class="table" id="table">
 				<thead>
@@ -331,6 +333,15 @@ cursor: default;
 					
 
 
+  <script>
+					function displayTime() {
+  var now = moment();
+  var timeString = now.format('h:mm:ss A');
+  document.getElementById('clock').innerHTML = timeString;
+}
+
+setInterval(displayTime, 1000);
+					  </script>
 
 
 					  <script>
